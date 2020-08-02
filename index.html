@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>BMI calculations</title>
+		<link
+			rel="stylesheet"
+			href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+			integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+			crossorigin="anonymous"
+		/>
+	</head>
+	<body>
+		<div class="container">
+			<h1>BMI calculator</h1>
+			<div class="input-group">
+				<div class="input-group-prepend">
+					<span class="input-group-text">Weight and Height</span>
+				</div>
+
+				<input type="text" class="weight" placeholder="weight(kg)" />
+				<input type="text" class="height" placeholder="height(m)" />
+			</div>
+			<br />
+
+			<button type="button" class="btn btn-dark btn-lg btn-block">
+				Click to get your BMI
+			</button>
+			<hr />
+
+			<div class="alert alert-info" role="alert">
+				<span id="BMIoutPut">Enter your weight and height to get your BMI</span>
+			</div>
+		</div>
+		<script type="text/javascript" src="bmi.js"></script>
+		<form id="form" onsubmit="return true;"></form>
+	</body>
+</html>
