@@ -15,8 +15,10 @@ function bmiCalculator(weightInput, heightInput) {
 		return `Your bmi is ${bmi}. You're underweight and should eat more.`;
 	} else if (bmi >= 18.5 && bmi <= 24.5) {
 		return `Your bmi is ${bmi}. Thats a good spot to be in!`;
-	} else {
+	} else if (bmi > 24.5) {
 		return `Your bmi is ${bmi}. You're fat and should eat less.`;
+	} else {
+		return `you must enter numbers to retrieve your bmi.`;
 	}
 	return bmi;
 }
